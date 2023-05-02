@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="hangman.css">
+  </head>
+  <body>
+    <h1>Hangman Game</h1>
+    <form id="guess-form">
+      <label for="guess-input">Guess a letter:</label>
+      <input type="text" id="guess-input" name="guess" maxlength="1">
+      <button type="submit">Guess</button> 
+    </form>
+    <!-- <button id="restart-button">Restart Game</button> -->
+    <div id="word"></div>
+    <div id="letters"></div>
+    <div id="mistakes-container">
+      <span id="mistakes">0 mistakes</span>
+    </div>
+    <canvas id="hangman" width="500" height="400"></canvas>
+    <script src="hangman.js"></script>
+  </body>
+</html>
